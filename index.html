@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workout Website</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="./script.js"></script>
+</head>
+<body>
+<header>
+    <div class="container">
+       <div class="logo">
+           <a href="">BearForm <span>Fitness</span> <span>Club</span></a>
+       </div>
+       <a href="javascript:void(0)" class="ham-burger">
+           <span></span>
+           <span></span>
+       </a> 
+       <div class="nav">
+           <ul>
+               <li><a href="">Home</a></li>
+               <li><a href="">About</a></li>
+               <li><a href="">Services</a></li>
+               <li><a href="">Class</a></li>
+               <li><a href="">Schedule</a></li>
+               <li><a href="">Price</a></li>
+               <li><a href="">Contact</a></li>
+           </ul>
+       </div>
+    </div>
+</header>
+<!-- Start Home -->
+<section class="home">
+    <div class="container">
+        <h1>Welcome to <span>Fitness</span> Challenge</h1>
+        <h1>You Will Never <span>Walk Alone</span></h1>
+    </div>
+    <!-- <go down></go> -->
+        <a href="about" class="go-down">
+            <i class="fa fa-angle-down" aria-hidden="true"></i>  
+        </a>
+    <!-- <go down></go> -->
+</section>
+
+<!-- End Home -->
+
+<!-- Start About -->
+    <section class="about">
+        <div class="container">
+        <div class="content">
+            <div class="box">
+                <div class="inner">
+                    <div class="img">
+                        <img src="./Images/abs.jpg" alt="abs"/>
+                    </div> 
+                    <div class="text">
+                        <h4>ABS Training </h4>
+                        <p> 1 Dumbbell crunch. Reps 10 Rest 10sec. Lie on your back, holding a dumbbell or weight plate across your chest in both hands.
+                            2 Tuck and crunch. Reps 15 Rest 10sec. 
+                            3 Modified V-sit. Reps 12 Rest 10sec. 
+                            4 Crunch. Reps 20 Rest 90sec</p>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="inner">
+                    <div class="img">
+                        <img src="./Images/legs.jpg" alt="legs"/>
+                    </div> 
+                    <div class="text">
+                        <h4>Leg Training </h4>
+                        <p> 1. Goblet Squat - 25.
+                            2. Banded Lateral Walk - 10 each side. 
+                            3. Single-Leg Deadlift - 10 each side. 
+                            4. Sumo Deadlift - 10 each side. 
+                            5. Stability Ball Bridge - 25. 
+                            6. Lateral Lunge with Balance - 10 each side. 
+                            7. Squat with Heel Raise - 10 each side. 
+                            8. Suitcase Deadlift - 10 each side.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="inner">
+                    <div class="img">
+                        <img src="./Images/back.jpg" alt="back"/>
+                    </div> 
+                    <div class="text">
+                        <h4>Back Training </h4>
+                        <p> 1. Barbell Deadlift  - 10.
+                            2. Bent-Over Barbell Row - 10.
+                            3. Wide-Grip Pull-Up - 10.
+                            4. Standing T-Bar Row - 10.
+                            5. Wide-Grip Seated Cable Row - 10.
+                            6. Reverse-Grip Smith Machine Row - 10.
+                            7. Close-Grip Pull-Down - 10.
+                            8. Single-Arm Dumbbell Row - 10.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="container">
+        <div class="content2">
+            <div class="box2">
+                <div class="inner">
+                    <div class="img">
+                        <img src="./Images/chest.jpg" alt="chest"/>
+                    </div> 
+                    <div class="text">
+                        <h4>Chest Training </h4>
+                        <p> 1. Barbell Bench Press - 10.
+                            2. Flat Bench Dumbbell Press - 10.
+                            3. Low-Incline Barbell Bench Press  - 10.
+                            4. Machine Decline Press  - 10.
+                            5. Seated Machine Chest Press   - 10.
+                            6. Incline Dumbbell Press   - 10.
+                            7. Dips For Chest - 10.
+                            8. Incline Bench Cable Fly - 10.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="box2">
+                <div class="inner">
+                    <div class="img">
+                        <img src="./Images/shoulder.jpg" alt="shoulder"/>
+                    </div> 
+                    <div class="text">
+                        <h4>Shoulder Training </h4>
+                        <p> 1. Barbell Overhead Shoulder Press - 10.
+                            2. Seated Dumbbell Shoulder Press - 10.
+                            3. Front Raise - 10.
+                            4. Reverse Pec Deck Fly - 10.
+                            5. Bent-Over Dumbbell Lateral Raise - 10.
+                            6. Dumbbell Lateral Raise - 10.
+                            7. Push Press - 10.
+                            8. Reverse Cable Crossover - 10.</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+    </div>
+
+    </section>
+
+<!-- End About -->
+
+<!-- jquery code -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $(".ham-burger").click(function(){
+            
+            $(".nav").toggleClass("open")
+            $(this).toggleClass("active");
+        })
+    })</script>
+// <!-- End jquery code -->
+</body>
+</html>
